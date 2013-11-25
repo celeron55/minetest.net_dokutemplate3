@@ -23,6 +23,11 @@ $htmltitle = strip_tags($conf['title']);
 if ($ID != "start"){$htmltitle = ucfirst($ID) . " - " . $htmltitle;}
     $htmltitle = str_replace("_", " ", $htmltitle); 
 
+//allow HTML for some pages
+if ($ID == 'support') {$conf['htmlok'] = true;} // Old donate page
+if ($ID == 'donate') {$conf['htmlok'] = true;}
+if ($ID == 'servers') {$conf['htmlok'] = true;}
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
