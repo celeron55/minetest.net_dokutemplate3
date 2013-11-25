@@ -1,0 +1,44 @@
+.loginlink {
+	float:right;
+}
+.loginlink a {
+	color:#999;
+}
+
+/* Table of Contents */
+#dw__toc {
+	clear: right;
+	float: right;
+	color: #999;
+	font-size: 80%;
+}
+#dw__toc a {
+	color: #999;
+}
+
+.h6e-page-title {
+}
+.h6e-page-title.large {
+	text-align: center;
+	padding-right: 2.5em;
+}
+.h6e-page-title.large #dokuwiki__top {
+	/*color:#4E5368;*/
+}
+.h6e-page-title.small {
+	float: right;
+	display: inline-block;
+}
+.h6e-page-title.small #dokuwiki__top {
+	font-size: 80%;
+	color: #999;
+}
+
+.h6e-page-title .large_logo {
+	margin-bottom:-0.7em;
+}
+.h6e-page-title .small_logo {
+	margin-bottom: -0.4em;
+	margin-top: 0.3em;
+}
+
