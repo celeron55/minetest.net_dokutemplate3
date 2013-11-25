@@ -122,7 +122,7 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 				<li><a href='http://c55.me/blog' class='sub_ex'>Blog</a></li>
 				</ul>
 			</li>
-			<li><a href='<?php echo $nav_pre; ?>support'>Donate</a></li>
+			<li><a href='<?php echo $nav_pre; ?>donate'>Donate</a></li>
 		</ul>
 	</div>
 
