@@ -5,9 +5,9 @@ pre, code, tt {
 }
 
 a.wikilink2, a.wikilink2:visited {
-	color:#CC7286;
-	border-bottom:1px dashed #CC7286;
-	text-decoration:none;
+	color:#6f231b;
+	/*border-bottom:1px dashed #6f231b;
+	text-decoration:none;*/
 }
 
 .h6e-entry-title a { text-decoration:none; }
