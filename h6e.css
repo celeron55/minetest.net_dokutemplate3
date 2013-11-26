@@ -17,6 +17,7 @@ a.wikilink2, a.wikilink2:visited {
 .h6e-post-content {
 	font-size:1.1em;
 	line-height:1.2em;
+	text-align: justify;
 }
 
 .h6e-page-title {
@@ -217,3 +218,40 @@ div.dokuwiki div.img_big {
 .dokuwiki .h6e-main-content ul.admin_tasks {
 	margin-left:0;
 }
+
+/* Blockquote
+ * (defined here in order to use __border__ and others)
+ * (make sure to disable styling in plugin) */
+
+.h6e-post-content blockquote {
+	position: relative;
+	margin: 1em 3em 1em 3em;
+	border: 1px dotted __border__;
+	/*background: __background_alt__ url(css/img/blockquote.png) no-repeat 0.3em 0.3em;*/
+	background: __background_alt__;
+	padding: 1em 2em 0.5em 2em;
+}
+.h6e-post-content blockquote:before {
+	position: absolute;
+	display: block;
+	left: 5px;
+	top: 30px;
+	color: #c4c8cc;
+	font-size: 90px;
+	content: "\201C";
+}
+.h6e-post-content cite {
+	font-style: italic;
+}
+.h6e-post-content blockquote cite {
+	text-align: right;
+	display: block;
+}
+.h6e-post-content blockquote cite:before {
+	content: "—";
+}
+.h6e-post-content q {
+	border: 1px dotted __border__;
+	background: __background_alt__;
+}
+
