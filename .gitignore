@@ -8,4 +8,6 @@ tags
 *.rej
 
 ## Project-specific files
+/push.sh
+/push_local.sh
 
