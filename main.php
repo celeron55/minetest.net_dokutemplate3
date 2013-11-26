@@ -39,6 +39,7 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 
   <link rel="stylesheet" media="screen" href="<?php echo H6E_CSS ?>/css/h6e-minimal.css" />
 
+  <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
   <?php tpl_metaheaders() ?>
   
   <style type="text/css">
