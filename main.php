@@ -86,7 +86,12 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 				<li><a href="./"><img src="<?php echo H6E_CSS ?>/images/minetest-icon-40.png" class="mini_logo" /></a></li>
 			<?php } ?>
 			<li><a href='./'>Home</a></li>
-			<li><a href='<?php echo $nav_pre; ?>download'>Download</a></li>
+			<li>
+				<a href='<?php echo $nav_pre; ?>download'>Download</a>
+				<ul>
+				<li><a href='<?php echo $nav_pre; ?>screenshots' class='sub'>Screenshots</a></li>
+				</ul>
+			</li>
 			<li>
 				<a href='<?php echo $nav_pre; ?>mods'>Mods</a>
 				<ul>
