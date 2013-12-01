@@ -68,9 +68,7 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 	<div class="h6e-main-wrapper">
 		<div id='menu'>
 			<ul>
-				<?php if($ID !== "start"){ ?>
-					<li><a href="./"><img src="<?php echo H6E_CSS ?>/images/minetest-icon-40.png" class="mini_logo" /></a></li>
-				<?php } ?>
+				<li style="float:left; margin-left:16px; background:none;"><a href="./" style="background:none; margin:0; padding:0; border:0;"><img src="<?php echo H6E_CSS ?>/images/minetest-icon-60.png" /></a></li>
 				<li><a href='./'>Home</a></li>
 				<li>
 					<a href='<?php echo $nav_pre; ?>download'>Download</a>
