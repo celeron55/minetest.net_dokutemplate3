@@ -28,13 +28,21 @@
 
 /* Main & Extra Content
 -------------------------------------------------------------- */
+.h6e-main-wrapper 
+{
+    width: 55em;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    font-size: 1.2em;
+    box-shadow: 0 0 58px 2px #CCC;
+    background: #FFFFFF;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
 
 .h6e-main-content, .h6e-extra-content {
-	width:50em;
-	margin:0 auto;
 	padding:1.5em 2.5em;
-	overflow:hidden;
-	font-size:1.2em;
 }
 
 /* Page Title

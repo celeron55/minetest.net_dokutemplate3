@@ -65,96 +65,98 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 <div class="dokuwiki">
 
 	<?php include dirname(__FILE__) . '/top.php' ?>
+	<div class="h6e-main-wrapper">
+		<div id='menu'>
+			<ul>
+				<?php if($ID !== "start"){ ?>
+					<li><a href="./"><img src="<?php echo H6E_CSS ?>/images/minetest-icon-40.png" class="mini_logo" /></a></li>
+				<?php } ?>
+				<li><a href='./'>Home</a></li>
+				<li>
+					<a href='<?php echo $nav_pre; ?>download'>Download</a>
+					<ul>
+					<li><a href='<?php echo $nav_pre; ?>screenshots' class='sub'>Screenshots</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href='<?php echo $nav_pre; ?>mods'>Mods</a>
+					<ul>
+					<li><a href='<?php echo $nav_pre; ?>mods' class='sub'>Popular</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?id=11' class='sub_ex'>Mod Releases</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?id=9' class='sub_ex'>Modding General</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href='<?php echo $nav_pre; ?>texturepacks'>Texture Packs</a>
+					<ul>
+					<li><a href='<?php echo $nav_pre; ?>texturepacks' class='sub'>Popular</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?id=4' class='sub_ex'>All</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href='<?php echo $nav_pre; ?>community'>Community</a>
+					<ul>
+					<li><a href='<?php echo $nav_pre; ?>community' class='sub'>Overview</a></li>
+					<li><a href='http://forum.minetest.net/' class='sub_ex'>Forum</a></li>
+					<li><a href='http://wiki.minetest.net/' class='sub_ex'>Wiki</a></li>
+					<li><a href='<?php echo $nav_pre; ?>irc' class='sub'>IRC</a></li>
+					<li><a href='<?php echo $nav_pre; ?>contributors' class='sub'>Contributors</a></li>
+					<li><a href='<?php echo $nav_pre; ?>servers' class='sub'>Servers</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href='<?php echo $nav_pre; ?>development'>Development</a>
+					<ul>
+					<li><a href='<?php echo $nav_pre; ?>development' class='sub'>Overview</a></li>
+					<li><a href='https://github.com/minetest/' class='sub_ex'>Github</a></li>
+					<li><a href='http://dev.minetest.net/Main_Page' class='sub_ex'>Developer Wiki</a></li>
+					<li><a href='http://dev.minetest.net/Intro' class='sub_ex'>API</a></li>
+					<li><a href='http://c55.me/blog' class='sub_ex'>Blog</a></li>
+					</ul>
+				</li>
+				<li><a href='<?php echo $nav_pre; ?>donate'>Donate</a></li>
+			</ul>
+		</div>
+		<div class="<?php echo $page_type ?> h6e-main-content">
 
-	<div class="<?php echo $page_type ?> h6e-main-content">
+		<?php if($ID === "start"){ ?>
+			<h1 class="h6e-page-title large">
+				<img src="<?php echo H6E_CSS ?>/images/minetest-icon-90.png" class="large_logo" />
+				<?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"') ?>
+			</h1>
+		<?php } ?>
 
-	<?php if($ID === "start"){ ?>
-		<h1 class="h6e-page-title large">
-			<img src="<?php echo H6E_CSS ?>/images/minetest-icon-90.png" class="large_logo" />
-			<?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"') ?>
-		</h1>
-	<?php } ?>
+		<?php
+			$nav_pre = "./doku.php?id=";
+			if ($conf['userewrite'] == 1)
+				$nav_pre = "./";
+		?>
+	
 
-	<?php
-		$nav_pre = "./doku.php?id=";
-		if ($conf['userewrite'] == 1)
-			$nav_pre = "./";
-	?>
-	<div id='menu'>
-		<ul>
-			<?php if($ID !== "start"){ ?>
-				<li><a href="./"><img src="<?php echo H6E_CSS ?>/images/minetest-icon-40.png" class="mini_logo" /></a></li>
-			<?php } ?>
-			<li><a href='./'>Home</a></li>
-			<li>
-				<a href='<?php echo $nav_pre; ?>download'>Download</a>
-				<ul>
-				<li><a href='<?php echo $nav_pre; ?>screenshots' class='sub'>Screenshots</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href='<?php echo $nav_pre; ?>mods'>Mods</a>
-				<ul>
-				<li><a href='<?php echo $nav_pre; ?>mods' class='sub'>Popular</a></li>
-				<li><a href='http://forum.minetest.net/viewforum.php?id=11' class='sub_ex'>Mod Releases</a></li>
-				<li><a href='http://forum.minetest.net/viewforum.php?id=9' class='sub_ex'>Modding General</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href='<?php echo $nav_pre; ?>texturepacks'>Texture Packs</a>
-				<ul>
-				<li><a href='<?php echo $nav_pre; ?>texturepacks' class='sub'>Popular</a></li>
-				<li><a href='http://forum.minetest.net/viewforum.php?id=4' class='sub_ex'>All</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href='<?php echo $nav_pre; ?>community'>Community</a>
-				<ul>
-				<li><a href='<?php echo $nav_pre; ?>community' class='sub'>Overview</a></li>
-				<li><a href='http://forum.minetest.net/' class='sub_ex'>Forum</a></li>
-				<li><a href='http://wiki.minetest.net/' class='sub_ex'>Wiki</a></li>
-				<li><a href='<?php echo $nav_pre; ?>irc' class='sub'>IRC</a></li>
-				<li><a href='<?php echo $nav_pre; ?>contributors' class='sub'>Contributors</a></li>
-				<li><a href='<?php echo $nav_pre; ?>servers' class='sub'>Servers</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href='<?php echo $nav_pre; ?>development'>Development</a>
-				<ul>
-				<li><a href='<?php echo $nav_pre; ?>development' class='sub'>Overview</a></li>
-				<li><a href='https://github.com/minetest/' class='sub_ex'>Github</a></li>
-				<li><a href='http://dev.minetest.net/Main_Page' class='sub_ex'>Developer Wiki</a></li>
-				<li><a href='http://dev.minetest.net/Intro' class='sub_ex'>API</a></li>
-				<li><a href='http://c55.me/blog' class='sub_ex'>Blog</a></li>
-				</ul>
-			</li>
-			<li><a href='<?php echo $nav_pre; ?>donate'>Donate</a></li>
-		</ul>
-	</div>
+		<?php if(0/*$ID !== "start"*/){ ?>
+			<h1 class="h6e-page-title small">
+				<?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"') ?>
+				<img src="<?php echo H6E_CSS ?>/images/minetest-icon-60.png" class="small_logo" />
+			</h1>
+		<?php } ?>
 
-	<?php if(0/*$ID !== "start"*/){ ?>
-		<h1 class="h6e-page-title small">
-			<?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"') ?>
-			<img src="<?php echo H6E_CSS ?>/images/minetest-icon-60.png" class="small_logo" />
-		</h1>
-	<?php } ?>
+		<?php if (!tpl_getConf('hide-entry-title')){?>
+			<h2 class="h6e-entry-title">
+			<?php
+				$tab_title = ucfirst(hsc($ID));
+				$tab_title = str_replace("_", " ", $tab_title); 
+				if ($ID == 'start') {$tab_title = "Minetest";}
+				if ($ID == 'irc') {$tab_title = strtoupper($ID);}
+				if ($ID == 'texturepacks') {$tab_title = "Texture Packs";}
+				tpl_pagetitle($tab_title)
+				?>
+		    </h2>
+		<?php }?>
 
-	<?php if (!tpl_getConf('hide-entry-title')){?>
-        <h2 class="h6e-entry-title">
-        <?php
-			$tab_title = ucfirst(hsc($ID));
-			$tab_title = str_replace("_", " ", $tab_title); 
-			if ($ID == 'start') {$tab_title = "Minetest";}
-			if ($ID == 'irc') {$tab_title = strtoupper($ID);}
-			if ($ID == 'texturepacks') {$tab_title = "Texture Packs";}
-			tpl_pagetitle($tab_title)
-			?>
-        </h2>
-    <?php }?>
-
-    <?php if($conf['breadcrumbs']){?>
-    <div class="breadcrumbs">
-      <?php tpl_breadcrumbs() ?>
+		<?php if($conf['breadcrumbs']){?>
+		<div class="breadcrumbs">
+		<?php tpl_breadcrumbs() ?>
+		</div>
     </div>
     <?php }?>
 
