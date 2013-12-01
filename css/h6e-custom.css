@@ -57,15 +57,16 @@
 #menu {
 	padding:0;
 	margin:0;
-	padding-bottom: 1em;
-	text-align: center;
-	width:55em;
+	font-size:1.2;
+	height:60px;
+	text-align: right;
 }
 
 #menu ul {
 	padding:0;
 	margin:0;
 	list-style-type:none;
+	background: linear-gradient(#D4D4D4 0%, #FFFFFF 55%);
 }
 
 #menu a.sub:link,
@@ -77,6 +78,7 @@
 	line-height:22px;
 	color:#404040;
 	margin:0;
+	background:#FFF;
 }
 
 #menu ul li a:hover,
@@ -93,6 +95,9 @@
 	padding:0;
 	margin:0;
 	text-align: left;
+	background: #fff;
+	box-shadow: 3px 3px 4px 1px #ccc;
+	margin-left: 5px !important;
 }
 	
 #menu ul ul li {
@@ -105,7 +110,7 @@
 	width:auto;
 	padding:0;
 	margin:0;
-	margin-right:10px;
+	margin-left: -5px;
 }
 
 #menu ul li:hover ul {
@@ -119,14 +124,17 @@
 
 #menu a:link,
 #menu a:visited {
-	display:inline;
+	display:block;
 	width:auto;
+	height:33px;
 	color:#323232;
 	background:none;
-	padding-left:5px;
-	padding-right:5px;
+	padding-left:12px;
+	padding-right:12px;
 	font-weight:regular;
 	font-family:"Calibri", sans-serif;
+	line-height:33px;
+	border-left: 1px solid #ccc;
 }
 
 
