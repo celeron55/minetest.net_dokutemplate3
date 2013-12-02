@@ -65,7 +65,12 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 <div class="dokuwiki">
 
 	<?php include dirname(__FILE__) . '/top.php' ?>
-	<div class="h6e-main-wrapper">
+	<div class="h6e-main-wrapper"<?php if($logged_in) {echo "style=\"position:relative; z-index:2;\"";}?>>
+		<?php
+			$nav_pre = "./doku.php?id=";
+			if ($conf['userewrite'] == 1)
+				$nav_pre = "./";
+		?>
 		<div id='menu'>
 			<ul>
 				<li style="float:left; margin-left:16px; background:none;"><a href="./" style="background:none; margin:0; padding:0; border:0;"><img src="<?php echo H6E_CSS ?>/images/minetest-icon-60.png" /></a></li>
@@ -118,18 +123,9 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 		<div class="<?php echo $page_type ?> h6e-main-content">
 
 		<?php if($ID === "start"){ ?>
-			<h1 class="h6e-page-title large">
-				<img src="<?php echo H6E_CSS ?>/images/minetest-icon-90.png" class="large_logo" />
-				<?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"') ?>
-			</h1>
-		<?php } ?>
-
-		<?php
-			$nav_pre = "./doku.php?id=";
-			if ($conf['userewrite'] == 1)
-				$nav_pre = "./";
-		?>
-	
+			<div style="width:100%; height:342px; background-image:url(<?php echo H6E_CSS ?>/images/main_screenshot.jpg); margin-left:-2.5em;padding-right:5em; margin-bottom:2.5em;">
+			</div>
+		<?php } ?>	
 
 		<?php if(0/*$ID !== "start"*/){ ?>
 			<h1 class="h6e-page-title small">
