@@ -103,10 +103,10 @@
 	display:none;
 	padding:0;
 	margin:0;
-	text-align: left;
-	background: #fff;
-	box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, .2);
-	margin-left: 5px !important;
+	text-align:left;
+	background:#FFF;
+	box-shadow:3px 3px 4px 1px rgba(0, 0, 0, .2);
+	margin-left:5px !important;
 }
 	
 #menu ul ul li {
@@ -119,16 +119,16 @@
 	width:auto;
 	padding:0;
 	margin:0;
-	margin-left: -5px;
+	margin-left:-5px;
 }
 
 #menu ul li:hover ul {
 	display:block;
-	background:#fff;
+	background:#FFF;
 }
 
 #menu ul li:hover {
-	background-color:#fff;
+	background-color:#FFF;
 }
 
 #menu a:link,
@@ -137,9 +137,9 @@
 	width:auto;
 	height:33px;
 	color:#323232;
-	background:none;
-	padding-left:12px;
-	padding-right:12px;
+	background:#FFF;
+	padding-left:0.44em;
+	padding-right:0.44em;
 	font-weight:regular;
 	font-family:"Calibri", sans-serif;
 	line-height:33px;
