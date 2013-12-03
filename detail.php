@@ -3,7 +3,7 @@
 if (!defined('DOKU_INC')) die();
 
 if (!defined('H6E_CSS')) {
-  if (file_exists(dirname(__FILE__) . '/minetest2')) {
+  if (file_exists(dirname(__FILE__) . '/minetest3')) {
     define('H6E_CSS', DOKU_URL . 'lib/tpl/minimal');
   } else {
     define('H6E_CSS', 'http://h6e.net/css');
@@ -19,7 +19,7 @@ if (!defined('H6E_CSS')) {
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title><?php echo hsc(tpl_img_getTag('IPTC.Headline',$IMG)) ?> - <?php echo strip_tags($conf['title']) ?></title>
   
-  <link rel="stylesheet" media="screen" href="<?php echo H6E_CSS ?>/minetest2/minetest2.css" />
+  <link rel="stylesheet" media="screen" href="<?php echo H6E_CSS ?>/minetest3/minetest3.css" />
 
   <?php tpl_metaheaders()?>
 

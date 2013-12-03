@@ -4,7 +4,7 @@ if (!defined('DOKU_INC')) die();
 
 if (!defined('H6E_CSS')) {
   if (file_exists(dirname(__FILE__) . '/css')) {
-    define('H6E_CSS', DOKU_URL . 'lib/tpl/minetest2');
+    define('H6E_CSS', DOKU_URL . 'lib/tpl/minetest3');
   } else {
     //define('H6E_CSS', 'http://h6e.net/css');
 	die("Stylesheets missing");
