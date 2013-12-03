@@ -130,6 +130,7 @@
 	background:linear-gradient(#D4D4D4 0%, #FFFFFF 45%);
 	background:-moz-linear-gradient(#D4D4D4 0%, #FFFFFF 45%);
 	background:-webkit-linear-gradient(#D4D4D4 0%, #FFFFFF 45%);
+	background-color:#FFF;
 	padding-left:0.44em;
 	padding-right:0.44em;
 	font-weight:regular;
