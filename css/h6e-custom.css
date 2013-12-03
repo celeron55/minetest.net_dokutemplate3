@@ -75,7 +75,7 @@
 	padding:0;
 	margin:0;
 	list-style-type:none;
-	background: linear-gradient(#D4D4D4 0%, #FFFFFF 1px);
+	background: linear-gradient(#D4D4D4 0%, #FFFFFF 45%);
 }
 
 #menu a.sub:link,
@@ -137,7 +137,7 @@
 	width:auto;
 	height:33px;
 	color:#323232;
-	background:#FFF;
+	background: linear-gradient(#D4D4D4 0%, #FFFFFF 45%);
 	padding-left:0.44em;
 	padding-right:0.44em;
 	font-weight:regular;
@@ -150,6 +150,7 @@
 #menu a:hover,
 #menu a:visited:hover {
 	color: #009dff;
+	background:#FFF;
 }
 
 #menu a.sub_ex:before {
