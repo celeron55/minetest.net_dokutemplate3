@@ -85,15 +85,15 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 					<a href='<?php echo $nav_pre; ?>mods'>Mods</a>
 					<ul>
 					<li><a href='<?php echo $nav_pre; ?>mods' class='sub'>Popular</a></li>
-					<li><a href='http://forum.minetest.net/viewforum.php?id=11' class='sub_ex'>Mod Releases</a></li>
-					<li><a href='http://forum.minetest.net/viewforum.php?id=9' class='sub_ex'>Modding General</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?f=11' class='sub_ex'>Mod Releases</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?f=9' class='sub_ex'>Modding General</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href='<?php echo $nav_pre; ?>texturepacks'>Texture Packs</a>
 					<ul>
 					<li><a href='<?php echo $nav_pre; ?>texturepacks' class='sub'>Popular</a></li>
-					<li><a href='http://forum.minetest.net/viewforum.php?id=4' class='sub_ex'>All</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?f=4' class='sub_ex'>All</a></li>
 					</ul>
 				</li>
 				<li>
