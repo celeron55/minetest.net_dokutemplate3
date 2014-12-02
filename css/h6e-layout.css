@@ -40,7 +40,7 @@ body
     width: 55em;
     margin: 0 auto;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden; NOTE: Has to be disabled for the rightmost navigation dropdown to show up properly */
     font-size: 1.2em;
     box-shadow: 0 0 58px 2px #CCC;
     background: #FFFFFF;
