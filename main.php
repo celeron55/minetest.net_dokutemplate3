@@ -82,18 +82,14 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 					</ul>
 				</li>
 				<li>
-					<a href='<?php echo $nav_pre; ?>mods'>Mods</a>
+					<a href='<?php echo $nav_pre; ?>customize'>Customize</a>
 					<ul>
-					<li><a href='<?php echo $nav_pre; ?>mods' class='sub'>Popular</a></li>
-					<li><a href='http://forum.minetest.net/viewforum.php?f=11' class='sub_ex'>Mod Releases</a></li>
-					<li><a href='http://forum.minetest.net/viewforum.php?f=9' class='sub_ex'>Modding General</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href='<?php echo $nav_pre; ?>texturepacks'>Texture Packs</a>
-					<ul>
-					<li><a href='<?php echo $nav_pre; ?>texturepacks' class='sub'>Popular</a></li>
-					<li><a href='http://forum.minetest.net/viewforum.php?f=4' class='sub_ex'>All</a></li>
+					<li><a href='<?php echo $nav_pre; ?>subgames' class='sub'>Subgames</a></li>
+					<li><a href='<?php echo $nav_pre; ?>mods' class='sub'>Mods</a></li>
+					<li><a href='<?php echo $nav_pre; ?>texturepacks' class='sub'>Texture Packs</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?f=48' class='sub_ex'>Forum: Subgames</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?f=46' class='sub_ex'>Forum: Mods</a></li>
+					<li><a href='http://forum.minetest.net/viewforum.php?f=4' class='sub_ex'>Forum: Texture Packs</a></li>
 					</ul>
 				</li>
 				<li>
@@ -115,9 +111,12 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 					<li><a href='http://dev.minetest.net/Main_Page' class='sub_ex'>Developer Wiki</a></li>
 					<li><a href='http://dev.minetest.net/Intro' class='sub_ex'>API</a></li>
 					<li><a href='http://c55.me/blog' class='sub_ex'>Blog</a></li>
+					<li><a href='<?php echo $nav_pre; ?>donate' class='sub'>Donate</a></li>
 					</ul>
 				</li>
-				<li><a href='<?php echo $nav_pre; ?>donate'>Donate</a></li>
+				<!--<li>
+					<a href='<?php echo $nav_pre; ?>screenshots'>Screenshots</a>
+				</li>-->
 			</ul>
 		</div>
 		<div class="<?php echo $page_type ?> h6e-main-content">
