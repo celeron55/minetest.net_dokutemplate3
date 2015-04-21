@@ -107,11 +107,12 @@ if ($ID == 'servers') {$conf['htmlok'] = true;}
 					<a href='<?php echo $nav_pre; ?>development'>Development</a>
 					<ul>
 					<li><a href='<?php echo $nav_pre; ?>development' class='sub'>Overview</a></li>
+					<li><a href='<?php echo $nav_pre; ?>reporting_issues' class='sub'>Reporting issues</a></li>
+					<li><a href='<?php echo $nav_pre; ?>donate' class='sub'>Donate</a></li>
 					<li><a href='https://github.com/minetest/' class='sub_ex'>Github</a></li>
 					<li><a href='http://dev.minetest.net/Main_Page' class='sub_ex'>Developer Wiki</a></li>
 					<li><a href='http://dev.minetest.net/Intro' class='sub_ex'>API</a></li>
 					<li><a href='http://c55.me/blog' class='sub_ex'>Blog</a></li>
-					<li><a href='<?php echo $nav_pre; ?>donate' class='sub'>Donate</a></li>
 					</ul>
 				</li>
 				<!--<li>
